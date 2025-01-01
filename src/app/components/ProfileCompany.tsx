@@ -1,17 +1,10 @@
 import Image from "next/image";
-import Bg from "../../../../public/images/bg-profile.png";
+
 
 
 export default function ProfileCompany() {
     return (
         <div className="w-full h-[838px]">
-            <div className=" absolute -z-[99]">
-                <Image
-                    src={Bg}
-                    alt=""
-                    className="object-cover -my-36"
-                />
-            </div>
             <div className="grid grid-cols-2">
                 <div className="flex w-fit px-10 py-20">
                     <Image
