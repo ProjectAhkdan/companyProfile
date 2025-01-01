@@ -4,6 +4,6 @@
 
 @layer utilities {
   .clip-trapezoid {
-    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
   }
 }

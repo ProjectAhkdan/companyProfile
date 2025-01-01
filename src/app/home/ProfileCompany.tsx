@@ -16,7 +16,7 @@ export default function ProfileCompany() {
                     />
                 </div>
 
-                <div className="py-20 w-full px-5 bg-gray-100 rounded-xl -z-[100]">
+                <div className="py-20 h-full w-full px-5 bg-gray-100 rounded-xl">
                     <h3 className="text-gray-500 text-[40px] font-semibold leading-tight let italic w-[75%]">We offer technology solutions specific to your business needs</h3>
                 </div>
             </div>

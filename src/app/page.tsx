@@ -1,12 +1,9 @@
-import ProfileCompany from "./components/ProfileCompany";
-
-
+import Home from "./home/page"
 
 export default function Page() {
   return (
-    <div className="">
-     
-      <ProfileCompany />
+    <div>
+      <Home />
     </div>
   )
 }
