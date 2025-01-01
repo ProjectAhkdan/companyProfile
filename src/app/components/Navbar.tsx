@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { IconYhoiki } from "./icon/icon";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -28,21 +28,16 @@ const Navbar = () => {
             <div className="w-full mx-auto sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
-                    <nav>
-                        <div className="flex items-center space-x-4">
-                            <Link legacyBehavior href="/">
-                                <a className="flex items-center space-x-2">
-                                    <Image
-                                        src="/logo.png"
-                                        alt="Logo"
-                                        width={30}
-                                        height={30}
-                                    />
+                    <div>
+                        <div className="flex items-center space-x-4 relative">
+                            <div>
+                                <div className="flex items-center w-full space-x-2">
+                                        <IconYhoiki />
                                     <span className="text-green-500 text-2xl font-bold">Yhoiki</span>
-                                </a>
-                            </Link>
+                                </div>
+                            </div>
                         </div>
-                    </nav>
+                    </div>
 
 
                     {/* tampilan dekstop */}
