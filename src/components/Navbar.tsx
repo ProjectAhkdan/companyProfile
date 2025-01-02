@@ -7,7 +7,7 @@ import { useState } from "react";
 // Komponen untuk menu item
 const NavItem = ({ href, label }: { href: string; label: string }) => (
   <Link legacyBehavior href={href}>
-    <a className="text-gray-500 font-semibold hover:text-green-600 transition">
+    <a className="text-gray-500 text-sm font-semibold hover:text-green-600 transition">
       {label}
     </a>
   </Link>
