@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import bg from "../../../public/assets/bg.png";
-import { IconYhoikihero } from "../components/icon/icon";
+import { IconYhoikihero } from "../../components/icon/icon";
 
 const Hero: React.FC = () => {
   return (

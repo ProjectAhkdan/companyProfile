@@ -2,8 +2,6 @@
 
 import { IconYhoikinav } from "./icon/icon";
 import Link from "next/link";
-import { useState } from "react";
-
 // Komponen untuk menu item
 const NavItem = ({ href, label }: { href: string; label: string }) => (
   <Link legacyBehavior href={href}>

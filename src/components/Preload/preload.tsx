@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils"
 import { useRef } from "react"
 import useIsomorphicLayoutEffect from "@/hooks/UseIsomorphicLayoutEffect"
 import gsap from "gsap"
-import { IconYhoikinav } from "@/app/components/icon/icon"
+import { IconYhoikinav } from "@/components/icon/icon"
 
 interface PreloadProps {
   endedLoading: boolean
