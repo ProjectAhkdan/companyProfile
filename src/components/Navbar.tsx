@@ -13,9 +13,9 @@ const NavItem = ({ href, label }: { href: string; label: string }) => (
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
+  { href: "/About", label: "About" },
   { href: "/services", label: "Services" },
-  { href: "/contact", label: "Contact Us" },
+  { href: "/ContactUs", label: "Contact Us" },
 ];
 
 // Komponen utama Navbar
