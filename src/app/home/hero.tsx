@@ -1,8 +1,9 @@
 // components/Hero.tsx
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import bg from "../../../public/assets/bg.png";
-import { IconYhoikihero } from "../components/icon/icon";
+import { IconYhoikihero } from "../../components/icon/icon";
 
 const Hero: React.FC = () => {
   return (
@@ -39,16 +40,24 @@ const Hero: React.FC = () => {
               about technology now? Visit the course menu.
             </p>
           </div>
+<<<<<<< HEAD
           <div className="">
             <button className="mt-6 px-6 py-3 bg-[linear-gradient(90deg,rgba(117,197,126,1)_0%,rgba(52,168,83,1)_100%)] rounded-full text-white font-medium text-lg hover:opacity-90 transition duration-200">
               Contact us
             </button>
           </div>
+=======
+         <div className=" pt-8">
+         <Link href="/contactUs" className="mt-6 px-6 py-3 bg-[linear-gradient(90deg,rgba(117,197,126,1)_0%,rgba(52,168,83,1)_100%)] rounded-full text-white font-medium text-lg hover:opacity-90 transition duration-200">
+            Contact us
+          </Link>
+         </div>
+>>>>>>> dd546a100c0e9c3cf73296d6a9e84f4d628d2afa
         </div>
 
         {/* kanan konten */}
         <div className="relative z-20 hidden md:flex justify-center items-center">
-          <div className="w-48 h-48 flex justify-center items-center shadow-lg">
+          <div className="w-48 h-48 flex justify-center items-center">
             <div className=" w-fit h-fit p-10">
               <IconYhoikihero />
             </div>
