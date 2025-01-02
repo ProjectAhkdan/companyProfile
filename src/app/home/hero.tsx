@@ -40,19 +40,12 @@ const Hero: React.FC = () => {
               about technology now? Visit the course menu.
             </p>
           </div>
-<<<<<<< HEAD
-          <div className="">
-            <button className="mt-6 px-6 py-3 bg-[linear-gradient(90deg,rgba(117,197,126,1)_0%,rgba(52,168,83,1)_100%)] rounded-full text-white font-medium text-lg hover:opacity-90 transition duration-200">
-              Contact us
-            </button>
-          </div>
-=======
+
          <div className=" pt-8">
          <Link href="/contactUs" className="mt-6 px-6 py-3 bg-[linear-gradient(90deg,rgba(117,197,126,1)_0%,rgba(52,168,83,1)_100%)] rounded-full text-white font-medium text-lg hover:opacity-90 transition duration-200">
             Contact us
           </Link>
          </div>
->>>>>>> dd546a100c0e9c3cf73296d6a9e84f4d628d2afa
         </div>
 
         {/* kanan konten */}

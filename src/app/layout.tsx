@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-<<<<<<< HEAD
-import Navbar from "./components/Navbar";
-import { Poppins } from 'next/font/google';
-import Footer from "./components/Footer";
 
 
-=======
 import { Poppins } from "next/font/google";
 import Navbar from "../components/Navbar";
->>>>>>> dd546a100c0e9c3cf73296d6a9e84f4d628d2afa
+import Footer from "@/components/Footer";
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -111,8 +107,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-<<<<<<< HEAD
-    <html lang="en">
+
+    <html lang="en" suppressHydrationWarning>
       <body
         className={poppins.className}
       >
@@ -123,13 +119,7 @@ export default function RootLayout({
           description="Mengasah proses unik yang memberikan hasil luar biasa dengan efisiensi menakjubkan untuk memenuhi sasaran pendapatan."
           mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.20750910861!2d110.33468368494506!3d-7.024721091850458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4d3f0d024d%3A0x1e0432b9da5cb9f2!2sSemarang%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1703720391495!5m2!1sen!2sid"
         />
-=======
-    <html lang="en" suppressHydrationWarning>
-      <body className={poppins.className}>
-        <Navbar />
-          {children}
->>>>>>> dd546a100c0e9c3cf73296d6a9e84f4d628d2afa
-      </body>
-    </html>
+      </body >
+    </html >
   );
 }

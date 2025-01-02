@@ -1,5 +1,6 @@
+import { IconRespect } from "@/components/icon/icon";
 import React from "react";
-import { IconRespect } from "../components/icon/icon";
+
 
 interface ContactInfoProps {
     title: string;
