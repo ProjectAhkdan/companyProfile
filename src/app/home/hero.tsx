@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
 
         {/* kanan konten */}
         <div className="relative z-20 hidden md:flex justify-center items-center">
-          <div className="w-48 h-48 flex justify-center items-center shadow-lg">
+          <div className="w-48 h-48 flex justify-center items-center">
             <div className=" w-fit h-fit p-10">
               <IconYhoikihero />
             </div>
