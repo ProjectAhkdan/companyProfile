@@ -4,7 +4,7 @@ import Founder from "../../../public/assets/founder.png";
 
 export default function ProfileCompany() {
   return (
-    <div className="mb-20 flex h-[838px] w-full overflow-hidden">
+    <div className=" flex h-[838px] w-full overflow-hidden">
       <div className="relative w-full h-full grid grid-cols-1 md:grid-cols-2 items-center">
         {/* Background */}
         <div className="absolute inset-0 -z-10">

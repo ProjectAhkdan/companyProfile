@@ -1,18 +1,18 @@
-import { cn } from "@/lib/utils"
-import { useRef } from "react"
-import useIsomorphicLayoutEffect from "@/hooks/UseIsomorphicLayoutEffect"
-import gsap from "gsap"
-import { IconYhoikinav } from "@/components/icon/icon"
+import { cn } from "@/lib/utils";
+import { useRef } from "react";
+import useIsomorphicLayoutEffect from "@/hooks/UseIsomorphicLayoutEffect";
+import gsap from "gsap";
+import { IconYhoikinav } from "@/components/icon/iconHome";
 
 interface PreloadProps {
-  endedLoading: boolean
+  endedLoading: boolean;
 }
 
 export default function Preload({ endedLoading }: PreloadProps) {
-  const counterRef = useRef<HTMLDivElement>(null)
+  const counterRef = useRef<HTMLDivElement>(null);
 
   useIsomorphicLayoutEffect(() => {
-    const counter = counterRef.current
+    const counter = counterRef.current;
 
     if (counter) {
       gsap.to(counter, {
@@ -20,12 +20,12 @@ export default function Preload({ endedLoading }: PreloadProps) {
         duration: 3,
         ease: "power1.out",
         onUpdate: () => {
-          counter.innerHTML = counter.innerHTML
-          counter.innerHTML = `${Math.floor(parseInt(counter.innerHTML))}%`
+          counter.innerHTML = counter.innerHTML;
+          counter.innerHTML = `${Math.floor(parseInt(counter.innerHTML))}%`;
         },
-      })
+      });
     }
-  }, [endedLoading])
+  }, [endedLoading]);
 
   return (
     <div
@@ -41,5 +41,5 @@ export default function Preload({ endedLoading }: PreloadProps) {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { IconYhoikinav } from "./icon/icon";
+import { IconYhoikinav } from "./icon/iconHome";
 import Link from "next/link";
 // Komponen untuk menu item
 const NavItem = ({ href, label }: { href: string; label: string }) => (

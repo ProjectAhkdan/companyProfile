@@ -3,12 +3,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import bg from "../../../public/assets/bg.png";
-import { IconYhoikihero } from "../../components/icon/icon";
+import { IconYhoikihero } from "../../components/icon/iconHome";
 
 const Hero: React.FC = () => {
   return (
-    <div className=" flex overflow-hidden">
-      <div className="relative h-screen grid grid-cols-1 md:grid-cols-2 items-center ">
+    <div className=" flex overflow-hidden ">
+      <div className="relative h-screen px-20 grid grid-cols-1 md:grid-cols-2 items-center ">
         {/* Background */}
         <div className="absolute inset-0">
           <Image
@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-[linear-gradient(150deg,rgba(34,193,195,0)_70%,rgba(58,171,87,0.31)_70%)]"></div>
 
         {/* kiri konten */}
-        <div className=" relative z-10 pl-7 grid grid-row-3 text-center md:text-left">
+        <div className=" relative z-10 grid grid-row-3 text-center md:text-left">
           <div>
             <h1 className="text-4xl font-bold text-white md:text-5xl">
               Welcome
@@ -41,17 +41,20 @@ const Hero: React.FC = () => {
             </p>
           </div>
 
-         <div className=" pt-8">
-         <Link href="/contactUs" className="mt-6 px-6 py-3 bg-[linear-gradient(90deg,rgba(117,197,126,1)_0%,rgba(52,168,83,1)_100%)] rounded-full text-white font-medium text-lg hover:opacity-90 transition duration-200">
-            Contact us
-          </Link>
-         </div>
+          <div className=" pt-8">
+            <Link
+              href="/ContactUs"
+              className="mt-6 px-6 py-3 bg-[linear-gradient(90deg,rgba(117,197,126,1)_0%,rgba(52,168,83,1)_100%)] rounded-full text-white font-medium text-lg hover:opacity-90 transition duration-200"
+            >
+              Contact us
+            </Link>
+          </div>
         </div>
 
         {/* kanan konten */}
         <div className="relative z-20 hidden md:flex justify-center items-center">
           <div className="w-48 h-48 flex justify-center items-center">
-            <div className=" w-fit h-fit p-10">
+            <div className=" w-fit h-fit">
               <IconYhoikihero />
             </div>
           </div>
