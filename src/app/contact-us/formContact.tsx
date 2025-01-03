@@ -1,6 +1,7 @@
 import { IconRespect } from "@/components/icon/icon";
+import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 import React from "react";
-
 
 interface ContactInfoProps {
     title: string;
@@ -36,24 +37,40 @@ const SocialMediaSection = () => (
 );
 
 const ContactForm = () => (
-    <form className="space-y-10 mt-16">
+    <form className="space-y-5 mt-16">
         <div className="grid grid-cols-2 gap-5">
-            <input
-                type="email"
-                placeholder="Email"
-                className="p-2 border rounded-md w-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <input
-                type="text"
-                placeholder="Telepon"
-                className="p-2 border rounded-md w-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
+            <LabelInputContainer>
+                <label htmlFor="name" className="text-sm leading-3 text-gray-400">
+                    Email
+                </label>
+                <Input
+                    type="email"
+                    placeholder="johndoe@gmail.com"
+                    className="p-2 border rounded-md w-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500"
+                />
+            </LabelInputContainer>
+
+            <LabelInputContainer>
+                <label htmlFor="name" className="text-sm leading-3 text-gray-400">
+                    Telepon
+                </label>
+                <Input
+                    type="text"
+                    placeholder="021-xxx-xxx"
+                    className="p-2 border rounded-md w-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500"
+                />
+            </LabelInputContainer>
         </div>
-        <input
-            type="text"
-            placeholder="Name"
-            className="p-2 border rounded-md w-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500"
-        />
+        <LabelInputContainer>
+            <label htmlFor="name" className="text-sm leading-3 text-gray-400">
+                Name
+            </label>
+            <Input
+                type="text"
+                placeholder="John Doe"
+                className="p-2 border rounded-md w-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+        </LabelInputContainer>
         <textarea
             placeholder="Message"
             rows={5}
@@ -111,3 +128,17 @@ const FormContact = () => {
 };
 
 export default FormContact;
+
+const LabelInputContainer = ({
+    children,
+    className,
+}: {
+    children: React.ReactNode;
+    className?: string;
+}) => {
+    return (
+        <div className={cn("flex flex-col space-y-2 w-full", className)}>
+            {children}
+        </div>
+    );
+};
