@@ -14,6 +14,7 @@ const HeroContact: React.FC = () => {
                         alt="Background"
                         layout="fill"
                         objectFit="cover"
+                        objectPosition="left"
                         quality={75}
                         priority
                     />
@@ -24,7 +25,7 @@ const HeroContact: React.FC = () => {
 
                 <div className=" relative z-10 pl-10 grid grid-row-3 text-center md:text-left">
                     <div>
-                        <h1 className="text-5xl md:text-7xl font-bold text-white lg:text-9xl">
+                        <h1 className="text-5xl md:text-6xl font-bold text-white lg:text-8xl">
                             Contact Us
                         </h1>
                     </div>

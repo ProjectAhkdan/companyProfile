@@ -10,11 +10,11 @@ interface ContactInfoProps {
 }
 
 const ContactInfo: React.FC<ContactInfoProps> = ({ title, content }) => (
-    <div className="flex mt-10 items-center">
+    <div className="flex lg:justify-start sm:px-44 px-14 lg:px-0  mt-10 items-center md:px-0">
         <span className="outline outline-1 outline-gray-300 rounded-full p-3">
             <IconRespect />
         </span>
-        <div className="ml-4 flex flex-col">
+        <div className="ml-4 flex text-start flex-col">
             <h4 className="font-bold text-base">{title}</h4>
             <p>{content}</p>
         </div>
@@ -22,9 +22,9 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ title, content }) => (
 );
 
 const SocialMediaSection = () => (
-    <div>
-        <h2 className="font-bold text-2xl mt-10">Follow Me</h2>
-        <div className="flex mt-5 gap-5">
+    <div className="flex flex-col lg:text-start">
+        <h2 className="me-12 font-bold lg:text-2xl md:text-4xl text-5xl mt-10">Follow Me</h2>
+        <div className="flex md:justify-start lg:justify-start mt-5 gap-5 justify-center">
             {[...Array(3)].map((_, index) => (
                 <span
                     key={index}
@@ -38,7 +38,7 @@ const SocialMediaSection = () => (
 );
 
 const ContactForm = () => (
-    <form className="space-y-5 mt-16">
+    <form className="space-y-5 mt-20 pb-5 lg:pb-0">
         <div className="grid grid-cols-2 gap-5">
             <LabelInputContainer>
                 <label htmlFor="name" className="text-sm leading-3 text-gray-400">
@@ -87,10 +87,10 @@ const ContactForm = () => (
 );
 
 const MapSection = () => (
-    <div className="w-full flex justify-center mt-32 px-20 mb-8">
+    <div className="w-full flex justify-center lg:mt-32 mt-10 lg:px-20 mb-8">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63421.50594488516!2d111.03575509999999!3d-6.54135985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e712c79c993aa6b%3A0x1c00c5eb5b53dd70!2sKabupaten%20Pati%2C%20Jawa%20Tengah%2059155!5e0!3m2!1sid!2sid!4v1735742927732!5m2!1sid!2sid"
-            className="w-[80%] h-[800px] rounded-lg border-0"
+            className="w-[80%] lg:h-[800px] h-[400px] rounded-lg border-0"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -106,18 +106,18 @@ const FormContact = () => {
     ];
 
     return (
-        <div className="flex flex-col px-4">
-            <div className="flex mt-10">
-                <div className="w-1/2 px-36 flex-col leading-2">
-                    <h1 className="text-6xl font-semibold">Get In Touch</h1>
+        <div className="flex flex-col">
+            <div className="lg:flex md:flex mt-10">
+                <div className="text-center md:text-start md:px-10 md:w-1/2 lg:w-1/2 lg:px-36 flex-col leading-2">
+                    <h1 className=" md:text-4xl text-5xl font-semibold">Get In Touch</h1>
                     {contactInfo.map((info, index) => (
                         <ContactInfo key={index} {...info} />
                     ))}
                     <SocialMediaSection />
                 </div>
 
-                <div className="ml-36 w-1/3 px-10 outline outline-3 outline-gray-300 rounded-3xl">
-                    <h2 className="font-semibold text-4xl mt-10 text-center">
+                <div className="lg:ml-36 lg:w-1/3 md:w-1/2 w-5/6 mx-auto px-10 outline outline-3 outline-gray-300 rounded-3xl md:mr-10">
+                    <h2 className="font-semibold lg:text-4xl pt-5 md:pt-0 text-2xl mt-10 text-center">
                         Send a Message
                     </h2>
                     <ContactForm />
