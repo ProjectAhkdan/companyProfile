@@ -1,6 +1,20 @@
 import { IconGoal, IconVision, IconMission, IconDesignerS, IconCreation, IconApplications } from '../components/icon/iconHome'; 
 
-export const goalsData = [
+import { ReactNode } from 'react';
+
+interface Goal {
+  icon: ReactNode;
+  title: string;
+  description: string;
+}
+
+interface Service {
+  icon: ReactNode;
+  title: string;
+  description: string;
+}
+
+export const goalsData: Goal[] = [
   {
     icon: <IconGoal />,
     title: 'Our Goal',
@@ -21,20 +35,20 @@ export const goalsData = [
   },
 ];
 
-export const Services = [
+export const Services: Service[] = [
   {
-    icon: <IconDesignerS />, 
-    title: "Designer",
-    description: "We provide website design services and other things.",
+    icon: <IconDesignerS />,
+    title: 'Designer',
+    description: 'We provide website design services and other things.',
   },
   {
     icon: <IconCreation />,
-    title: "Website Creation",
-    description: "We provide website creation services.",
+    title: 'Website Creation',
+    description: 'We provide website creation services.',
   },
   {
     icon: <IconApplications />,
-    title: "Applications/Software",
-    description: "We provide applications/software services.",
+    title: 'Applications/Software',
+    description: 'We provide applications/software services.',
   },
-]
+];

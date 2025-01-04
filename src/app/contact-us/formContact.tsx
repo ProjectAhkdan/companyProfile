@@ -1,5 +1,5 @@
 
-import { IconRespect } from "@/components/icon/icon";
+import { IconRespect } from "@/components/icon/iconHome";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import React from "react";

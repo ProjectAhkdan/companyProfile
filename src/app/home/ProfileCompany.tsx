@@ -19,7 +19,7 @@ export default function ProfileCompany() {
         {/* Right Content */}
         <div className="relative z-20 flex h-full w-full items-center justify-center">
           <div className="p-10 rounded-md">
-            <p className="text-[#535753] text-4xl pl-20 font-semibold text-center md:text-left">
+            <p className="text-[#535753] text-4xl md:pl-20 font-semibold text-center md:text-left">
               We offer technology solutions specific to your business needs
             </p>
           </div>
