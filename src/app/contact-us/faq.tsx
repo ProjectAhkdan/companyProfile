@@ -27,17 +27,15 @@ const AccordionItem = ({
       >
         <span>{question}</span>
         <div
-          className={`transform transition-transform duration-200 ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`transform transition-transform duration-200 ${isOpen ? "rotate-180" : ""
+            }`}
         >
           <IconAccordion />
         </div>
       </button>
       <div
-        className={`transition-all duration-200 ${
-          isOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
-        } overflow-hidden`}
+        className={`transition-all duration-200 ${isOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
+          } overflow-hidden`}
       >
         <div className="p-6 pt-0 text-gray-600">{answer}</div>
       </div>
@@ -54,7 +52,7 @@ export default function Faq() {
 
   return (
     <div className="py-12">
-      <div className="mx-auto w-1/3 text-center tracking-wider">
+      <div className="mx-auto lg:w-1/3 w-5/6 text-center tracking-wider">
         <h2 className="text-3xl font-bold mb-4">
           Your <span className="text-green-400">Common</span> Queries{" "}
           <span className="text-green-400 underline">Answered</span> with
@@ -62,9 +60,9 @@ export default function Faq() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 gap-32 mx-auto w-4/6 mt-20">
+      <div className="grid md:grid-cols-2 lg:gap-32 gap-10 mx-auto w-4/6 md:w-5/6 mt-10">
         {/* Accordion section */}
-        <div className="w-full pt-4 h-full space-y-6">
+        <div className="flex flex-col justify-between w-full h-full space-y-4 order-2 lg:order-1">
           {faqData.map((faq, index) => (
             <AccordionItem
               key={index}
@@ -77,8 +75,14 @@ export default function Faq() {
         </div>
 
         {/* Image section */}
-        <div>
-          <Image src={bg} alt="FAQ illustration" width={460} height={400} />
+        <div className="order-1 md:order-2">
+          <Image src={bg}
+            alt="FAQ illustration"
+            width={500}
+            height={500}
+            objectFit="cover"
+            className="h-full w-full"
+          />
         </div>
       </div>
     </div>
